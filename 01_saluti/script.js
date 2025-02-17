@@ -4,14 +4,14 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-function greetings (str) {
+function greetName (str) {
     const string = 'Ciao ' + str
     return string
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-let result = greetings('Mattia')
+let result = greetName(userName)
 
 console.log(result)
 
