@@ -8,7 +8,7 @@ function initialsCheck (value, arr) {
     let arrayNames = []
     for (let i = 0; i <= arr.length - 1; i++) {
         if (arr[i].charAt(0) == value) {
-            arrayNames.push(arr[i])
+            arrayNames[arrayNames.length] = arr[i]
         }
     }
 
