@@ -16,3 +16,9 @@ let result = greetName(userName)
 console.log(result)
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+// Bonus: arrow function
+
+const greetNameArrow = str => 'Ciao ' + str
+
+console.log(greetNameArrow(userName))

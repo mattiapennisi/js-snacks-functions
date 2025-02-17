@@ -21,3 +21,17 @@ let result = namesInitials(names)
 console.log(result)
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+// Bonus: arrow function
+
+const namesInitialsArrow = arr => {
+    let arrayInitials = []
+
+    for (let i = 0; i <= arr.length - 1; i++) {
+        arrayInitials.push(arr[i].charAt(0))
+    }
+
+    return arrayInitials
+}
+
+console.log(namesInitialsArrow(names))

@@ -22,3 +22,18 @@ let result = initialsCheck('A', names)
 console.log(result)
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+// Bonus: arrow function
+
+const initialsCheckArrow = (value, arr) => {
+    let arrayNames = []
+    for (let i = 0; i <= arr.length - 1; i++) {
+        if (arr[i].charAt(0) == value) {
+            arrayNames[arrayNames.length] = arr[i]
+        }
+    }
+
+    return arrayNames
+}
+
+console.log(initialsCheckArrow('A', names))

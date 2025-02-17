@@ -14,15 +14,15 @@ function timeGreetings (str) {
     let hours = newDate.getHours()
     let result = ''
     
-    if (hours <= 13) {
+    if (hours < 13) {
         result = 'Buongiorno ' + str
     }
 
-    else if (hours <= 17) {
+    else if (hours < 17) {
         result = 'Buon pomeriggio ' + str
     }
 
-    else if (hours <= 5) {
+    else if (hours < 4) {
         result = 'Buonasera ' + str
     }
 
@@ -36,3 +36,27 @@ let result = timeGreetings(name)
 console.log(result)
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+// Bonus: arrow function
+
+const timeGreetingsArrow = str => {
+    let newDate = new Date()
+    let hours = newDate.getHours()
+    let result = ''
+    
+    if (hours < 13) {
+        result = 'Buongiorno ' + str
+    }
+
+    else if (hours < 17) {
+        result = 'Buon pomeriggio ' + str
+    }
+
+    else if (hours < 4) {
+        result = 'Buonasera ' + str
+    }
+
+    return result
+}
+
+console.log(timeGreetingsArrow(name))
